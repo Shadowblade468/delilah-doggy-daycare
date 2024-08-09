@@ -1,0 +1,240 @@
+/************* Site Defaults *************/
+body {
+    width: 950px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Flexbox setup */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/************* Typography *************/
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+    color: #E5AF42;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/************* Links *************/
+a {
+    color: #4278e5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/************* Buttons *************/
+button, .fake-button, .small-button {
+    background-color: #E5AF42;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.fake-button, .small-button {
+    display: inline-block;
+    line-height: 1.5;
+}
+
+button:hover, .fake-button:hover, .small-button:hover, .blue-hover:hover {
+    background-color: #4278e5;
+    color: #fff;
+    text-decoration: underline;
+}
+
+/************* Navigation Buttons *************/
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.nav-buttons a {
+    background-color: #E5AF42;
+    color: #333;
+    padding: 15px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-buttons a:first-child {
+    margin-left: 0;
+}
+
+.nav-buttons a:last-child {
+    margin-right: 0;
+}
+
+.nav-buttons a:hover {
+    background-color: #4278e5;
+    color: #fff;
+}
+
+/************* Header *************/
+header {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/************* Main Content *************/
+main {
+    padding: 20px;
+}
+
+/* About Us Section */
+.about-us {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+/* Image Styling */
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/************* Booking Page Specific Styles *************/
+.booking-page .day-selector {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-page .day-selector li {
+    background-color: #E5AF42;
+    color: #333;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.booking-page .day-selector li:hover,
+.booking-page .day-selector li.selected {
+    background-color: #4278e5;
+    color: #fff;
+}
+
+.booking-page .large-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/************* Contact Page Specific Styles *************/
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact .flex {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.contact label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact input[type="text"]:focus,
+.contact input[type="email"]:focus,
+.contact textarea:focus {
+    border-color: #4278e5;
+    outline: none;
+}
+
+.contact textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/************* Footer *************/
+footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+footer a {
+    color: #4278e5;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
